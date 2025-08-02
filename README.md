@@ -24,9 +24,6 @@ This is a **content-based movie recommendation system** built using collaborativ
 
 ## 💻 How to Run the App Locally
 
-### 1. Clone the Repo
-```bash
-
 ## install dependencies
 pip install -r requirements.txt
 
