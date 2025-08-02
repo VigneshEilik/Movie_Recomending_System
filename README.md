@@ -47,12 +47,13 @@ Movie_Recomending_System/
 └── README.md
 
 
-📜 License
+##  📜 License
+
 This project is licensed under the MIT License.
 
 👤 Author
-Vignesh (Vicky) .
+Vignesh 
 
-GitHub: VigneshEilik .
+GitHub: VigneshEilik 
 
 
