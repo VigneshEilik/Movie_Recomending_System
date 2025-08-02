@@ -6,6 +6,31 @@ from scipy.sparse import csr_matrix
 import os
 
 st.set_page_config(page_title="Movie Recommender", layout="wide")
+
+def check_login():
+    def auth():
+        if (st.session_state["username"] == "client" and
+            st.session_state["password"] == "movie"):
+            st.session_state["authenticated"] = True
+            del st.session_state["username"]
+            del st.session_state["password"]
+        else:
+            st.session_state["authenticated"] = False
+
+    if "authenticated" not in st.session_state:
+        st.text_input("👤 Username", key="username")
+        st.text_input("🔐 Password", type="password", key="password")
+        st.button("Login", on_click=auth)
+        st.stop()
+    elif not st.session_state["authenticated"]:
+        st.text_input("👤 Username", key="username")
+        st.text_input("🔐 Password", type="password", key="password")
+        st.button("Login", on_click=auth)
+        st.error("❌ Invalid username or password")
+        st.stop()
+
+check_login()
+
 st.title("🎬 Movie Recommendation System")
 
 # Show full traceback if error
