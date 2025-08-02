@@ -51,9 +51,9 @@ Movie_Recomending_System/
 
 This project is licensed under the MIT License.
 
-👤 Author
-Vignesh 
+## 👤 Author
 
+Vignesh 
 GitHub: VigneshEilik 
 
 
